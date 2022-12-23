@@ -1,0 +1,86 @@
+.hero__wrapper {
+    background: rgba(98, 72, 255, 0.1);
+
+}
+.hero__title {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+    color: #333333;
+    margin-bottom: 24px;
+    word-wrap: normal;
+        
+    }
+    .hero__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4F4F4F;
+  }
+  .hero__section {
+    padding-top: 100px;
+    padding-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 320px) {
+    .hero__chart {
+        background-image: url('../images/chartmobile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 280px;
+        height: 301px;
+      }
+  }
+  @media screen and (min-width: 768px) {
+    .hero__chart {
+        background-image: url('../images/chartTablet.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 482px;
+        height: 519px;
+        margin: 0 auto;
+      }
+      .hero__title {
+        font-family: 'Museo Sans Cyrl';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 72px;
+        color: #333333;
+        margin-bottom: 32px;
+        word-wrap: normal;
+            
+        }
+  }
+  @media screen and (min-width: 1440px) {
+    .hero__chart {
+        background-image: url('../images/chart.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 482px;
+        height:519px;
+      }
+      .hero__text-wrapper {
+        width:50%
+    }
+    .hero__section {
+        flex-direction: row;
+       }
+       .hero__title {
+        font-family: 'Museo Sans Cyrl';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 72px;
+        color: #333333;
+        margin-bottom: 32px;
+        word-wrap: normal;
+            
+        }
+  }
