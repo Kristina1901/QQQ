@@ -1,0 +1,209 @@
+.planing__section {
+  padding-top: 80px;
+  }
+  
+.planing__list-item {
+  display: inline-block;
+  background: #ffffff;
+  border: 2px solid #6248ff;
+  border-radius: 30px;
+  padding: 24px 24px;
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 24px;
+ 
+}
+.planing__list-item:last-child {
+    margin-bottom: 0px;
+}
+.planing__list-numbering {
+  display: block;
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6248ff;
+  margin-bottom: 8px;
+}
+.planing__list-item-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4f4f4f;
+  width: 232px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .planing__section {
+    padding-top: 120px;
+    }
+    .planing__list {
+        margin-bottom: -178px;
+      }
+    .planing__list-item-text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #4f4f4f;
+      width: 265px;
+      margin-top: 24px;
+      
+  }
+   .planing__list-item {
+       display: inline-block;
+       background: #ffffff;
+       border: 2px solid #6248ff;
+       border-radius: 30px;
+       padding: 24px 24px;
+       font-family: 'Museo Sans Cyrl';
+       font-style: normal;
+       font-weight: 500;
+       font-size: 24px;
+       line-height: 28.8px;
+       margin-bottom: 0px;
+       position: relative;
+   }
+
+   .planing__list-item:nth-child(1) {
+       margin-right: 193px;
+   }
+
+   .planing__list-item:nth-child(2) {
+       margin-left: 329px;
+       position: relative;
+       bottom: 57px;
+   }
+
+   .planing__list-item:nth-child(3) {
+       margin-right: 329px;
+       position: relative;
+       bottom: 114px;
+   }
+
+   .planing__list-item:nth-child(4) {
+       margin-left: 329px;
+       position: relative;
+       bottom: 178px;
+   }
+
+   .planing__list-item:nth-child(4)::before {
+       display: none;
+   }
+
+   .planing__list-item:nth-child(2n)::before {
+       content: "";
+       width: 193px;
+       height: 59px;
+       background-image: url('../images/linetablerright.svg');
+       background-position: center;
+       background-repeat: no-repeat;
+       position: absolute;
+       bottom: 20%;
+       right: 100%;
+   }
+
+   .planing__list-item:nth-child(2n+1)::after {
+       content: "";
+       width: 193px;
+       height: 59px;
+       background-image: url('../images/linetabletLeft.svg');
+       background-position: center;
+       background-repeat: no-repeat;
+       position: absolute;
+       bottom: 25%;
+       left: 100%;
+   }
+}
+@media screen and (min-width: 1440px) {
+    .planing__section {
+        padding-top: 140px;
+        }
+   .planing__list-item-text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #4f4f4f;
+      width: 417px;
+      margin-top: 24px;
+      margin-bottom: 0px;
+  }
+  .planing__list-item {
+      display: inline-block;
+      background: #ffffff;
+      border: 2px solid #6248ff;
+      border-radius: 30px;
+      padding: 24px 24px;
+      font-family: 'Museo Sans Cyrl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28.8px;
+      margin-bottom: 0px;
+      position: relative;
+  }
+
+  .planing__list-item:nth-child(1) {
+      margin-right: 374px;
+  }
+
+  .planing__list-item:nth-child(2) {
+      margin-left: 615px;
+      position: relative;
+      bottom: 50px;
+  }
+
+  .planing__list-item:nth-child(3) {
+      margin-right: 615px;
+      position: relative;
+      bottom: 95px;
+  }
+
+  .planing__list-item:nth-child(4) {
+      margin-left: 615px;
+      position: relative;
+      bottom: 155px;
+  }
+
+  .planing__list-item:nth-child(4)::before {
+      display: none;
+  }
+
+  .planing__list-item:nth-child(2n)::before {
+      content: "";
+      width: 374px;
+      height: 70px;
+      background-image: url('../images/lineDesktopright.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 20%;
+      right: 100%;
+  }
+
+  .planing__list-item:nth-child(2n+1)::after {
+      content: "";
+      width: 374px;
+      height: 70px;
+      background-image: url('../images/lineDesktop.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 25%;
+      left: 100%;
+  }
+  .planing__list {
+    margin-bottom: -178px;
+  }
+}
