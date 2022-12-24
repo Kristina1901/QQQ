@@ -13,6 +13,8 @@ body {
   }
   ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   html,
   body {
@@ -22,4 +24,69 @@ body {
 
 button {
     cursor: pointer;
+}
+.second__header {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #333333;
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+.second__header::after {
+  position: absolute;
+  content: '';
+  width: 254px;
+  height: 50px;
+  background: rgba(98, 72, 255, 0.1);
+  left: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .second__header {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+    color: #333333;
+    width: 483px;
+    margin-bottom: 56px;
+    position: relative;
+  }
+    .second__header::after {
+      position: absolute;
+      content: '';
+      width: 350px;
+      height: 37px;
+      background: rgba(98, 72, 255, 0.1);
+      left: 0;
+      bottom: 0;
+    }
+}
+@media screen and (min-width: 1440px) {
+  .second__header {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+    color: #333333;
+    width: 483px;
+    margin-bottom: 68px;
+  }
+
+  .second__header::after {
+    position: absolute;
+    content: '';
+    width: 296px;
+    height: 72px;
+    background: rgba(98, 72, 255, 0.1);
+    left: 0;
+    bottom: 0;
+  }
 }
