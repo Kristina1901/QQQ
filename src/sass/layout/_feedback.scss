@@ -1,0 +1,272 @@
+.feedback__section {
+  padding-top: 80px;
+}
+.feedback__profile-name {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #333333;
+  text-align: left;
+  margin-top: 8px;
+}
+.feedback__profile-img-job {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4f4f4f;
+}
+.feedback__profile-img {
+  margin-right: 30px;
+  width: 73px;
+  height: 73px;
+  background-image: url('../images/director.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.feedback__profile-text {
+  margin-top: 25px;
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  width: 100%;
+  text-align: center;
+}
+.feedback__wrapper-buttons {
+  display: none;
+}
+.feedback__counter {
+  margin-top: 31px;
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6248ff;
+  text-align: center;
+}
+.feedback__profile-text-wrapper {
+  display: none;
+}
+.feedback__profile-wrapper {
+  display: flex;
+}
+.feedback__profile-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback__profile-text-quote-tablet {
+  display: block;
+  width: 35px;
+  height: 29px;
+  display: block;
+  background-image: url('../images/quote.svg');
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  margin-top: 24px;
+  
+}
+.feedback__profile-text-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-prev {
+  width: 48px;
+  height: 48px;
+  color: rgba(21, 12, 1, 1);
+  background: #ffffff;
+  border: 1px solid #6248ff;
+  border-radius: 50%;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-prev-arrow {
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/arrowPrev.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-disabled {
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-next {
+  width: 48px;
+  height: 48px;
+  color: rgba(21, 12, 1, 1);
+  background: #ffffff;
+  border: 1px solid #6248ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-next-arrow {
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/arrowNext.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper__container {
+  position: relative;
+}
+.swiper__container  .swiper-prev {
+  position: absolute;
+  bottom: 0
+
+  }
+  .swiper__container  .swiper-next {
+    position: absolute;
+    right:  0;
+    bottom: 0
+  
+    }
+
+@media screen and (min-width: 768px) {
+  .feedback__section {
+    padding-top: 120px;
+  }
+  .feedback__profile-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback__profile-text-quote-tablet {
+    display: block;
+    width: 35px;
+    height: 29px;
+    display: block;
+    background-image: url('../images/quote.svg');
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin-top: 16px;
+      
+  }
+  .feedback__profile-name {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .feedback__profile-text-wrapper {
+    display: none;
+  }
+  .feedback__profile-text-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback__profile-text {
+   width: 508px;
+   text-align: center;
+}
+.feedback__profile-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.feedback__wrapper-buttons {
+  display: none;
+}
+.swiper__container {
+  position: relative;
+}
+.swiper__container  .swiper-prev {
+  position: absolute;
+  bottom: 45%
+
+  }
+  .swiper__container  .swiper-next {
+    position: absolute;
+    right:  0;
+    bottom: 45%
+  
+    }
+}
+@media screen and (min-width: 1440px) {
+  .feedback__section {
+    padding-top: 140px;
+  }
+  .feedback__wrapper {
+    display: flex;
+  }
+  .feedback__profile-text-quote {
+    width: 35px;
+    height: 29px;
+    display: block;
+    background-image: url('../images/quote.svg');
+    background-repeat: no-repeat;
+    margin-right: 15px;
+  }
+  .feedback__profile-data {
+    display: flex;
+  }
+  .feedback__profile-text-quote-tablet {
+    display: block;
+  }
+  .swiper__container {
+    width: 49%;
+  }
+  .feedback__profile-name {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    color: #333333;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .feedback__profile-text-wrapper {
+    padding-top: 152px;
+    display: block;
+  }
+  .feedback__profile-text-main {
+    display: none;
+}
+ .feedback__profile-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback__wrapper-buttons {
+  display: flex;
+}
+.swiper__container .swiper-prev {
+  display: none;
+}
+.swiper__container .swiper-next {
+  display: none;
+}
+.swiper__container .swiper-disabled {
+  display: none;
+}
+
+}
