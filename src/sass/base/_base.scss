@@ -1,30 +1,33 @@
 body {
-    height: 100vh;
-    margin: 0;
-   -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "Museo Sans Cyrl", 'Montserrat';
-    box-sizing: border-box;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333333;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
+  height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Museo Sans Cyrl", 'Montserrat';
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
   padding: 0;
   margin: 0;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .second__header {
   font-family: 'Museo Sans Cyrl';
   font-style: normal;
@@ -37,6 +40,12 @@ button {
   position: relative;
 
 }
+
+.color__wrapper {
+  background: rgba(98, 72, 255, 0.1);
+
+}
+
 .second__header::after {
   position: absolute;
   content: '';
@@ -45,6 +54,63 @@ button {
   background: rgba(98, 72, 255, 0.1);
   left: 0;
   bottom: 0;
+}
+
+.correct__input {
+  border: 1px solid #0EAC00;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  border-radius: 3px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828282;
+  width: 224px;
+  margin-bottom: 24px;
+
+}
+
+.wrong__input {
+  border: 1px solid #EB5757;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  border-radius: 3px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828282;
+  width: 224px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.error-invisible {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #EB5757;
+  display: none;
+  text-align: left;
+  align-self: left;
+}
+.error-visible {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #EB5757;
+  text-align: left;
+  align-self: left;
+   
 }
 @media screen and (min-width: 768px) {
   .second__header {
@@ -58,16 +124,28 @@ button {
     margin-bottom: 56px;
     position: relative;
   }
-    .second__header::after {
-      position: absolute;
-      content: '';
-      width: 350px;
-      height: 37px;
-      background: rgba(98, 72, 255, 0.1);
-      left: 0;
-      bottom: 0;
-    }
+
+  .second__header::after {
+    position: absolute;
+    content: '';
+    width: 350px;
+    height: 37px;
+    background: rgba(98, 72, 255, 0.1);
+    left: 0;
+    bottom: 0;
+  }
+
+  .wrong__input {
+    width: 100%
+  }
+
+  ;
+
+  .correct__input {
+    width: 100%;
+  }
 }
+
 @media screen and (min-width: 1440px) {
   .second__header {
     font-family: 'Museo Sans Cyrl';
@@ -78,6 +156,7 @@ button {
     color: #333333;
     width: 483px;
     margin-bottom: 68px;
+    position: relative;
   }
 
   .second__header::after {
@@ -88,5 +167,15 @@ button {
     background: rgba(98, 72, 255, 0.1);
     left: 0;
     bottom: 0;
+  }
+
+  .wrong__input {
+    width: 100%
+  }
+
+  ;
+
+  .correct__input {
+    width: 100%;
   }
 }
