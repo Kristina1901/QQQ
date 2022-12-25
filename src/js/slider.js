@@ -35,12 +35,23 @@ prevbutton.addEventListener('click', function () {
   }
 });
 
- 
-
-const swiper = new Swiper('.swiper', {
+let swiper = new Swiper('.swiper', {
+  rebuildOnUpdate: true,
+  observer: true,
   navigation: {
     nextEl: '.swiper-next',
     prevEl:  '.swiper-prev',
+  },
+  breakpoints: {
+    768: {
+      allowSlidePrev: true,
+      allowSlideNext: true
+    },
+    320: {
+      allowSlidePrev: true,
+      allowSlideNext: true
+    },
   }
 });
+swiper.update();
 
