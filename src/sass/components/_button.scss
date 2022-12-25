@@ -36,63 +36,6 @@
         display: block;
     }
   }
-  .correct__input {
-      border: 1px solid #0EAC00;
-      padding-top: 7px;
-      padding-bottom: 7px;
-      padding-left: 16px;
-      border-radius: 3px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: #828282;
-      width: 224px;
-      margin-bottom: 24px;
-
-  }
-
-  .wrong__input {
-      border: 1px solid #EB5757;
-      padding-top: 7px;
-      padding-bottom: 7px;
-      padding-left: 16px;
-      border-radius: 3px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: #828282;
-      width: 224px;
-      margin-bottom: 8px;
-      position: relative;
-  }
-
-  .error-invisible {
-      font-family: 'Museo Sans Cyrl';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 16px;
-      color: #EB5757;
-      display: none;
-      text-align: left;
-      align-self: left;
-  }
-
-  .error-visible {
-      font-family: 'Museo Sans Cyrl';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 16px;
-      color: #EB5757;
-      text-align: left;
-      align-self: left;
-
-  }
   .hero__button {
       font-family: 'Museo Sans Cyrl';
       font-style: normal;
