@@ -20,16 +20,21 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "email-validator": "^2.0.4",
     "gh-pages": "^4.0.0",
     "modern-normalize": "^1.1.0",
     "sass": "^1.57.1",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "throttle": "^1.0.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "assert": "^2.0.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
