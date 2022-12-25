@@ -12,7 +12,19 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
+    display: flex;
+    align-items: center;
     display: none;
+}
+.navigation__button:hover {
+    background: #7181FC;
+    
+}
+.navigation__button:active {
+    background: #354BF4;
+}
+.navigation__button:focus {
+    background: #354BF4;
 }
 @media screen and (min-width: 768px) {
     .navigation__button { 
@@ -24,4 +36,149 @@
         display: block;
     }
   }
-  
+  .correct__input {
+      border: 1px solid #0EAC00;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 16px;
+      border-radius: 3px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #828282;
+      width: 224px;
+      margin-bottom: 24px;
+
+  }
+
+  .wrong__input {
+      border: 1px solid #EB5757;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 16px;
+      border-radius: 3px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #828282;
+      width: 224px;
+      margin-bottom: 8px;
+      position: relative;
+  }
+
+  .error-invisible {
+      font-family: 'Museo Sans Cyrl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 16px;
+      color: #EB5757;
+      display: none;
+      text-align: left;
+      align-self: left;
+  }
+
+  .error-visible {
+      font-family: 'Museo Sans Cyrl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 16px;
+      color: #EB5757;
+      text-align: left;
+      align-self: left;
+
+  }
+  .hero__button {
+      font-family: 'Museo Sans Cyrl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: #6248FF;
+      border-radius: 60px;
+      padding-right: 69px;
+      padding-left: 69px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: none;
+      margin-top: 32px;
+  }
+
+  .hero__button:hover {
+      background: #7181FC;
+      ;
+  }
+
+  .hero__button:active {
+      background: #354BF4;
+  }
+
+  .hero__button:focus {
+      background: #354BF4;
+  }
+  @media screen and (min-width: 768px) {
+    .hero__button {
+            padding-right: 65px;
+            padding-left: 65px;
+            margin-top: 48px;
+        }
+  }
+  @media screen and (min-width: 1440px) { 
+    .hero__button {
+            padding-right: 65px;
+            padding-left: 65px;
+            margin-top: 48px;
+        }
+  }
+  .contact__form-button {
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 20px 64px;
+      background: #6248FF;
+      border-radius: 60px;
+      border: none;
+      margin-top: 48px;
+      align-self: center;
+
+  }
+
+  .contact__form-button:disabled {
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #828282;
+      padding: 20px 64px;
+      background: #E0E0E0;
+      border-radius: 60px;
+      border: none;
+      margin-top: 48px;
+      align-self: center;
+  }
+  @media screen and (min-width: 768px) {
+    .contact__form-button {
+            margin-top: 40px;
+        }
+   }
+   @media screen and (min-width: 1440px) {
+    .contact__form-button {
+            margin-top: 40px;
+        }
+    }
