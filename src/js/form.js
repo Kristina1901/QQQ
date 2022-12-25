@@ -11,7 +11,6 @@ let button = document.querySelector(
 let form = document.querySelector(
   '.contact__form-fields'
 );
-console.log(nameInput.value);
 if (
   nameInput.value !== '' &&
   messageInput.value !== '' &&
