@@ -9,7 +9,7 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: #333333;
+  color: var(--dark--text-menu-color);
   text-align: left;
   margin-top: 8px;
 }
@@ -38,7 +38,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: #333333;
+  color: var(--dark--text-menu-color);
   width: 100%;
   text-align: center;
 }
@@ -54,7 +54,7 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  color: #6248ff;
+  color: var(--main-color);
   text-align: center;
 }
 
@@ -184,7 +184,7 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    color: #333333;
+    color: var(--dark--text-menu-color);
     text-align: center;
     margin-top: 10px;
   }
@@ -269,7 +269,7 @@
     font-size: 18px;
     line-height: 30px;
     text-align: left;
-    color: #333333;
+    color: var(--dark--text-menu-color);
     text-align: left;
     margin-top: 10px;
   }
@@ -303,6 +303,9 @@
 
   .swiper__container .swiper-disabled {
     display: none;
+  }
+  .feedback_wrapper-title {
+    margin-right: 80px;
   }
 
 }
