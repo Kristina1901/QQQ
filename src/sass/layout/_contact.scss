@@ -1,14 +1,23 @@
+input {
+  text-indent: 16px;
+}
+
+textarea {
+  text-indent: 16px;
+}
+
+.contact__section-info .contact__header {
+  margin-bottom: 32px;
+}
+
 textarea {
   resize: none;
 }
+
 .contact__section {
   padding-top: 80px;
 }
-@media screen and (max-width: 318px) {
-  .contact__form-input {
-    width: 158px;
-  }
-}
+
 .contact__section-content {
   padding-top: 48px;
   padding-bottom: 48px;
@@ -20,7 +29,7 @@ textarea {
   font-weight: 500;
   font-size: 40px;
   line-height: 44px;
-  color: #333333;
+  color: var(--dark--text-menu-color);
   width: 100%;
   margin-bottom: 40px;
   position: relative;
@@ -51,7 +60,7 @@ textarea {
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
-  color: #333333;
+  color: var(--dark--text-menu-color);
   margin-bottom: 8px;
 }
 
@@ -71,18 +80,19 @@ textarea {
   background: #ffffff;
   border: 2px solid #6248ff;
   border-radius: 20px;
-  max-width: 280px;
+
 }
+
 .contact__form-fields {
   max-width: 248px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 .contact__form-input {
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 16px;
   border: 1px solid #e0e0e0;
   border-radius: 3px;
   font-family: 'Montserrat';
@@ -91,21 +101,24 @@ textarea {
   font-size: 16px;
   line-height: 26px;
   color: #828282;
-  width: 224px;
+  width: 240px;
   margin-bottom: 24px;
 }
 
 .contact__form-input:focus {
-    outline: none;
-    border: 1px solid #828282;
-    border-radius: 3px;
+  outline: none;
+  border: 1px solid #828282;
+  border-radius: 3px;
 }
+
 .contact__form-input:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
+
 .contact__section-info {
   margin-bottom: 48px;
 }
+
 @media screen and (min-width: 768px) {
   .contact__section {
     padding-top: 80px;
@@ -122,7 +135,7 @@ textarea {
     font-weight: 500;
     font-size: 56px;
     line-height: 66px;
-    color: #333333;
+    color:var(--dark--text-menu-color);
     width: 483px;
     margin-bottom: 56px;
   }
@@ -139,26 +152,31 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+
   .contact__form-fields {
     max-width: 425px;
   }
 
   .contact__form {
     padding: 80px 42px;
-    max-width: 420px;
+
   }
+
   .contact__form-input {
-    width: 100%;
+    width: 425px;
   }
+
   .contact__section-info {
     margin-bottom: 48px;
   }
+
   .contact__section-info {
-      max-width: 508px;
+    max-width: 508px;
   }
+
   .contact__section-content {
-      padding-right: 90px;
-      padding-left: 90px;
+    padding-right: 90px;
+    padding-left: 90px;
   }
 }
 
@@ -196,23 +214,30 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .contact__form-fields {
     width: 421px;
   }
 
   .contact__form {
     padding: 80px 80px;
-    max-width: 520px;
+
   }
+
   .contact__form-input {
     width: 100%;
   }
+
   .contact__section-info {
     max-width: 483px;
   }
+
   .contact__section-content {
-      padding-right: 0;
-      padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
-  
+
+  .contact__section-info {
+    margin-bottom: 0;
+  }
 }
