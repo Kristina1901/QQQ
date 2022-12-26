@@ -748,7 +748,6 @@ header {
   display: block;
   background-image: url("../images/quote.svg");
   background-repeat: no-repeat;
-  margin-right: 15px;
   margin-top: 24px;
 }
 
@@ -838,7 +837,6 @@ header {
     display: block;
     background-image: url("../images/quote.svg");
     background-repeat: no-repeat;
-    margin-right: 15px;
     margin-top: 16px;
   }
   .feedback__profile-name {
@@ -901,7 +899,6 @@ header {
     display: block;
     background-image: url("../images/quote.svg");
     background-repeat: no-repeat;
-    margin-right: 15px;
   }
   .feedback__profile-data {
     display: flex;
