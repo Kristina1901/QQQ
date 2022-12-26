@@ -1,6 +1,9 @@
 .navigation__list {
     display: flex;
 }
+.navigation {
+    display: none;
+}
 
 .navigation__link {
     font-size: 15px;
@@ -10,17 +13,21 @@
     font-size: 15px;
     line-height: 16px;
 }
-
+ .header__container-select {
+     display: none;
+ }
 header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: -60px;
+    
 }
-
-.navigation__Wrapper {
+.navigation__wrapper {
     display: flex;
     align-items: center;
 
@@ -30,7 +37,50 @@ header {
     margin-right: 32px;
 }
 
+.header .choices__inner {
+    width: 100%;
+    min-height: 25px;
+    border: 1px solid #000000;
+    border-radius: 60px;
+    background: #FFFFFF;
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+   color: #333333;
+}
+.navigation__buttons {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    
+}
 
+.header .choices__list--dropdown {
+    width: 125%;
+}
+.header .choices__list {
+    width: 125%;
+}
+
+.header .choices[data-type*=select-one]::after {
+   right: 0;
+}
+
+.header .choices__list--dropdown {
+    word-break: normal;
+}
+
+.header .choices__list--dropdown .choices__list {
+    overflow: hidden;
+
+}
+
+.header .choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: var(--main-color);
+    color: #FFFFFF;
+}
 
 @media screen and (min-width: 768px) {
     header {
@@ -40,17 +90,28 @@ header {
     .logotype__text {
         display: none;
     }
-}
-
-@media screen and (min-width: 320px) {
-    header {
-        margin-right: 0px;
+    .navigation {
+        display: none;
+    }
+    .header__container-select {
+        display: none;
     }
 }
 
 @media screen and (min-width: 1440px) {
+    .header__wrapper {
+        margin-right: -60px;
+        }
     .logotype__text {
         display: block;
     }
+    .header__container-select {
+        margin-right: 44px;
+    }
+        .navigation {
+            display: block;
+        }
+                .header__container-select {
+                    display: block;
+                }
 }
-
