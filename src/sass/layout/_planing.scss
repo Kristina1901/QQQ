@@ -26,7 +26,7 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  color: #6248ff;
+  color: var(--main-color);
   margin-bottom: 8px;
 }
 .planing__list-item-text {
@@ -144,7 +144,7 @@
       background: #ffffff;
       border: 2px solid #6248ff;
       border-radius: 30px;
-      padding: 24px 24px;
+      padding: 32px 32px;
       font-family: 'Museo Sans Cyrl';
       font-style: normal;
       font-weight: 500;

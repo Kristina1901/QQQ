@@ -13,8 +13,8 @@
     margin-bottom: 16px;
     display: flex;
     align-items: center;
+    
 }
-
 .questions__list-item-response {
     display: none;
 }
@@ -139,4 +139,8 @@
         padding-left: 40px;
 
     }
+        .questions__list {
+            padding-right: 102px;
+            padding-left: 102px;
+        }
 }
