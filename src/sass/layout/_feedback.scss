@@ -43,10 +43,6 @@
   text-align: center;
 }
 
-.feedback__wrapper-buttons {
-  display: none;
-}
-
 .feedback__counter {
   margin-top: 31px;
   font-family: 'Museo Sans Cyrl';
@@ -89,6 +85,10 @@
   justify-content: center;
 }
 
+.feedback__wrapper {
+  position: relative;
+}
+
 .swiper-prev {
   width: 48px;
   height: 48px;
@@ -100,6 +100,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
 }
 
 .swiper-prev-arrow {
@@ -132,6 +135,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+.swiper-next:disabled {
+   width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .swiper-next-arrow {
@@ -142,20 +160,20 @@
   background-repeat: no-repeat;
 }
 
-.swiper__container .swiper-prev {
-  position: absolute;
-  bottom: 0
-}
-
-.swiper__container .swiper-next {
-  position: absolute;
-  right: 0;
-  bottom: 0
-}
-
 @media screen and (min-width: 768px) {
   .feedback__section {
     padding-top: 120px;
+  }
+
+  .swiper-next {
+    position: absolute;
+    top: 65%;
+    right: 0;
+  }
+
+  .swiper-prev {
+    position: absolute;
+    top: 65%;
   }
 
   .feedback__profile-data {
@@ -171,7 +189,7 @@
     display: block;
     background-image: url('../images/quote.svg');
     background-repeat: no-repeat;
-     margin-top: 16px;
+    margin-top: 16px;
 
   }
 
@@ -210,24 +228,10 @@
     position: relative;
   }
 
-  .feedback__wrapper-buttons {
-    display: none;
-  }
-
   .swiper__container {
     position: relative;
   }
 
-  .swiper__container .swiper-prev {
-    position: absolute;
-    bottom: 45%
-  }
-
-  .swiper__container .swiper-next {
-    position: absolute;
-    right: 0;
-    bottom: 45%
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -245,7 +249,7 @@
     display: block;
     background-image: url('../images/quote.svg');
     background-repeat: no-repeat;
-   
+
   }
 
   .feedback__profile-data {
@@ -291,19 +295,18 @@
     display: flex;
   }
 
-  .swiper__container .swiper-prev {
-    display: none;
-  }
-
-  .swiper__container .swiper-next {
-    display: none;
-  }
-
-  .swiper__container .swiper-disabled {
-    display: none;
-  }
   .feedback_wrapper-title {
     margin-right: 80px;
+  }
+
+  .swiper-next {
+    position: static;
+
+  }
+
+  .swiper-prev {
+    position: static;
+
   }
 
 }

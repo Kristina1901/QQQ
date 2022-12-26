@@ -24,6 +24,7 @@
     "email-validator": "^2.0.4",
     "gh-pages": "^4.0.0",
     "modern-normalize": "^1.1.0",
+    "react-responsive": "^9.0.2",
     "sass": "^1.57.1",
     "swiper": "^8.4.5",
     "throttle": "^1.0.3"

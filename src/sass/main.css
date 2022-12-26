@@ -712,10 +712,6 @@ header {
   text-align: center;
 }
 
-.feedback__wrapper-buttons {
-  display: none;
-}
-
 .feedback__counter {
   margin-top: 31px;
   font-family: 'Museo Sans Cyrl';
@@ -757,6 +753,10 @@ header {
   justify-content: center;
 }
 
+.feedback__wrapper {
+  position: relative;
+}
+
 .swiper-prev {
   width: 48px;
   height: 48px;
@@ -768,6 +768,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
 }
 
 .swiper-prev-arrow {
@@ -800,6 +803,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.swiper-next:disabled {
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-next-arrow {
@@ -810,20 +829,18 @@ header {
   background-repeat: no-repeat;
 }
 
-.swiper__container .swiper-prev {
-  position: absolute;
-  bottom: 0;
-}
-
-.swiper__container .swiper-next {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
 @media screen and (min-width: 768px) {
   .feedback__section {
     padding-top: 120px;
+  }
+  .swiper-next {
+    position: absolute;
+    top: 65%;
+    right: 0;
+  }
+  .swiper-prev {
+    position: absolute;
+    top: 65%;
   }
   .feedback__profile-data {
     display: flex;
@@ -869,20 +886,8 @@ header {
     justify-content: center;
     position: relative;
   }
-  .feedback__wrapper-buttons {
-    display: none;
-  }
   .swiper__container {
     position: relative;
-  }
-  .swiper__container .swiper-prev {
-    position: absolute;
-    bottom: 45%;
-  }
-  .swiper__container .swiper-next {
-    position: absolute;
-    right: 0;
-    bottom: 45%;
   }
 }
 
@@ -935,17 +940,14 @@ header {
   .feedback__wrapper-buttons {
     display: flex;
   }
-  .swiper__container .swiper-prev {
-    display: none;
-  }
-  .swiper__container .swiper-next {
-    display: none;
-  }
-  .swiper__container .swiper-disabled {
-    display: none;
-  }
   .feedback_wrapper-title {
     margin-right: 80px;
+  }
+  .swiper-next {
+    position: static;
+  }
+  .swiper-prev {
+    position: static;
   }
 }
 
