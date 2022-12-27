@@ -17,7 +17,7 @@ for (let i = 0; i < arrayButtons.length; i++) {
     'click',
     function () {
       arrayResponses.find((item, index) => {
-        if (i === index) {
+        if (i === index && arrayResponsesActive) {
           item.classList.remove(
             'questions__list-item-response'
           );
@@ -37,6 +37,14 @@ for (let i = 0; i < arrayButtons.length; i++) {
             'questions__list-item-response'
           );
           arrayResponsesActive.shift();
+        }
+        if (arrayResponsesActive.length === 1) {
+          arrayResponsesActive[0].classList.remove(
+            'questions__list-item-response'
+          );
+          arrayResponsesActive[0].classList.add(
+            'questions__list-item-response-visible'
+          );
         }
       });
     }
