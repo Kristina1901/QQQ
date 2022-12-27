@@ -11,8 +11,6 @@ let counterText = document.querySelector(
 let array = document.getElementsByClassName(
   'swiper-slide'
 );
-console.log(array);
-
 if (counter === 1) {
   prevbutton.classList.remove('.swiper-prev');
   prevbutton.classList.add('swiper-disabled');

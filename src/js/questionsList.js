@@ -36,7 +36,7 @@ for (let i = 0; i < arrayButtons.length; i++) {
           arrayResponsesActive[0].classList.add(
             'questions__list-item-response'
           );
-          arrayResponsesActive.shift(item);
+          arrayResponsesActive.shift();
         }
       });
     }
@@ -70,7 +70,7 @@ for (
           arrayResponsesActive[0].classList.add(
             'questions__list-item-response'
           );
-          arrayResponsesActive.shift(item);
+          arrayResponsesActive.shift();
         }
       });
     }
