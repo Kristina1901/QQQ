@@ -22,7 +22,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  
+
 }
 
 button {
@@ -44,7 +44,6 @@ button {
 
 .color__wrapper {
   background: var(--background-color)
-
 }
 
 .second__header::after {
@@ -61,7 +60,7 @@ button {
   border: 1px solid #0EAC00;
   padding-top: 7px;
   padding-bottom: 7px;
-   border-radius: 3px;
+  border-radius: 3px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -69,7 +68,7 @@ button {
   line-height: 26px;
   color: #828282;
   margin-bottom: 24px;
-  width: 248px;
+
 
 }
 
@@ -85,8 +84,8 @@ button {
   line-height: 26px;
   color: #828282;
   margin-bottom: 8px;
-  width: 248px;
- 
+
+
 }
 
 .error-invisible {
@@ -98,8 +97,9 @@ button {
   color: #EB5757;
   display: none;
   text-align: left;
-  
+
 }
+
 .error-visible {
   font-family: 'Museo Sans Cyrl';
   font-style: normal;
@@ -109,18 +109,20 @@ button {
   color: #EB5757;
   text-align: left;
   align-self: left;
-   
+
 }
+
 .logotype__text {
   text-transform: uppercase;
   font-size: 16px;
-  color:var(--dark--text-menu-color);
+  color: var(--dark--text-menu-color);
   font-weight: 700;
   font-family: "Museo Sans Cyrl";
   font-size: 15px;
   line-height: 16px;
   display: block;
 }
+
 .logotype {
   display: block;
   margin-right: 57px;
@@ -138,9 +140,10 @@ button {
     margin-bottom: 56px;
     position: relative;
   }
-     .logotype__text {
-       display: none;
-     }
+
+  .logotype__text {
+    display: none;
+  }
 
   .second__header::after {
     position: absolute;
@@ -152,12 +155,6 @@ button {
     bottom: 0;
   }
 
-  .wrong__input {
-    width: 425px
-  };
-  .correct__input {
-    width: 425px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -172,9 +169,10 @@ button {
     margin-bottom: 68px;
     position: relative;
   }
-    .logotype__text {
-      display: block;
-    }
+
+  .logotype__text {
+    display: block;
+  }
 
   .second__header::after {
     position: absolute;

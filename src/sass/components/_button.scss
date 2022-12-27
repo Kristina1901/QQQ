@@ -94,6 +94,7 @@
 .hero__button:focus {
     background: #354BF4;
 }
+
 .navigation__button-burger {
     background: #FFFFFF;
     background-image: url('../images/burger.svg');
@@ -108,7 +109,7 @@
     .hero__button {
         margin-top: 48px;
         width: 257px;
-     
+
     }
 
     .contact__form-button {
@@ -118,9 +119,14 @@
     .navigation__button {
         display: block;
     }
-        .navigation__button-burger {
-            margin-left: 48px;
-        }
+
+    .navigation__button-burger {
+        margin-left: 48px;
+    }
+
+    .hero__button {
+        width: 257px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -137,7 +143,8 @@
     .navigation__button {
         display: block;
     }
-        .navigation__button-burger {
-            display: none;
-        }
+
+    .navigation__button-burger {
+        display: none;
+    }
 }
