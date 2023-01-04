@@ -35,6 +35,9 @@ function handleChange(event) {
 function handleSubmit(event) {
   event.preventDefault();
   alert('Hello world');
+  form.reset();
+  email.classList.remove('correct__input');
+  email.classList.add('contact__form-input');
 }
 function onTextareaInput(evt) {
   let inputValue = evt.target.value;
