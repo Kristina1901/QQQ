@@ -27,7 +27,8 @@ function handleChange(event) {
   if (
     message.value.trim() !== '' &&
     email.value.trim() !== '' &&
-    name.value.trim() !== ''
+    name.value.trim() !== '' &&
+    EmailValidator.validate(email.value) === true
   ) {
     button.removeAttribute('disabled');
   }
@@ -38,6 +39,7 @@ function handleSubmit(event) {
   form.reset();
   email.classList.remove('correct__input');
   email.classList.add('contact__form-input');
+  button.setAttribute('disabled', 'disabled');
 }
 function onTextareaInput(evt) {
   let inputValue = evt.target.value;
