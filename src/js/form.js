@@ -14,13 +14,13 @@ let wrongValue = document.querySelector(
   '.wrong__input'
 );
 form.addEventListener('change', handleChange);
+form.addEventListener('submit', handleSubmit);
 
 let message = document.querySelector(
   '.error-invisible'
 );
 email.addEventListener('input', onTextareaInput);
 function handleChange(event) {
-  event.preventDefault();
   const {
     elements: { message, email, name },
   } = event.currentTarget;
@@ -31,6 +31,10 @@ function handleChange(event) {
   ) {
     button.removeAttribute('disabled');
   }
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  alert('Hello world');
 }
 function onTextareaInput(evt) {
   let inputValue = evt.target.value;
