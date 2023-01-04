@@ -5,4 +5,5 @@ let selectStateInputEl = document.querySelector(
 const choices = new Choices(selectStateInputEl, {
   searchEnabled: false,
   itemSelectText: '',
+  allowHTML: true,
 });

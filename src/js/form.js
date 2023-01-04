@@ -2,9 +2,8 @@ import * as EmailValidator from 'email-validator';
 let arrayInputs = document.getElementsByClassName(
   'contact__form-input'
 );
-let nameInput = arrayInputs[0];
+
 let email = document.getElementById('mail');
-let messageInput = arrayInputs[2];
 let button = document.querySelector(
   '.contact__form-button'
 );
@@ -19,38 +18,43 @@ if (
   button.removeAttribute('disabled');
 }
 form.addEventListener('submit', handleSubmit);
+let wrongValue = document.querySelector(
+  '.wrong__input'
+);
+form.addEventListener('change', handleChange);
 
 let message = document.querySelector(
   '.error-invisible'
 );
 email.addEventListener('input', onTextareaInput);
-
-function handleSubmit(event) {
+function handleChange(event) {
   event.preventDefault();
   const {
     elements: { message, email, name },
   } = event.currentTarget;
+  if (
+    message.value.trim() !== '' &&
+    email.value.trim() !== '' &&
+    name.value.trim() !== ''
+  ) {
+    button.removeAttribute('disabled');
+  }
 }
 function onTextareaInput(evt) {
-  let trigger = false;
+  let inputValue = evt.target.value;
   if (
-    EmailValidator.validate(
-      evt.currentTarget.value
-    ) === true
+    EmailValidator.validate(inputValue) === true
   ) {
     email.classList.remove('contact__form-input');
+    email.classList.remove('wrong__input');
     email.classList.add('correct__input');
+    message.style.display = 'none';
   }
   if (
-    EmailValidator.validate(
-      evt.currentTarget.value
-    ) === false
+    EmailValidator.validate(inputValue) === false
   ) {
-    trigger = true;
     email.classList.remove('contact__form-input');
     email.classList.add('wrong__input');
-  }
-  if (trigger === true) {
     message.style.display = 'block';
   }
   if (evt.currentTarget.value === '') {
