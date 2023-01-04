@@ -10,14 +10,6 @@ let button = document.querySelector(
 let form = document.querySelector(
   '.contact__form-fields'
 );
-if (
-  nameInput.value !== '' &&
-  messageInput.value !== '' &&
-  email !== ''
-) {
-  button.removeAttribute('disabled');
-}
-form.addEventListener('submit', handleSubmit);
 let wrongValue = document.querySelector(
   '.wrong__input'
 );
