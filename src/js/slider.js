@@ -52,11 +52,4 @@ let swiper = new Swiper('.swiper', {
     nextEl: '.swiper-next',
     prevEl: '.swiper-prev',
   },
-  breakpoints: {
-    768: {},
-    320: {
-      allowSlidePrev: true,
-      allowSlideNext: true,
-    },
-  },
 });
